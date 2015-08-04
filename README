@@ -1,0 +1,10 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5226
+
+GitHub: https://github.com/unblevable/quick-scope
+
+This plugin highlights the optimal characters to target for the f, F, t and T motions for easier and faster left-right movement in Vim.
+
+If you don't routinely use these keys you should! See ':help f' and ':help ;' to get started and https://github.com/unblevable/quick-scope#moving-across-a-line for a detailed look at why these keys
+are so useful.
+
+In practice, this plugin should help you get to any word on a line in two or three keystrokes with built-in Vim commands.
