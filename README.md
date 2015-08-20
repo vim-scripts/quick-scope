@@ -5,13 +5,14 @@ A Vim plugin that highlights which characters to target for <kbd>f</kbd>, <kbd>F
 
 *Check out [character motions](#character-motions) to learn about what these keys do and their advantages. See [other motions](#other-motions) for alternative ways of moving across a line and their use-cases.*
 
-**TLDR**: This plugin should help you get to any word on a line in two or three keystrokes with built-in Vim commands.
+**TLDR**: This plugin should help you get to any word on a line in two or three keystrokes with mainly <kbd>f{char}</kbd> (which moves your cursor to <kbd>{char}</kbd>).
 
 + [Overview](#overview)
   + [Features](#features)
   + [Benefits](#benefits)
 + [Installation](#installation)
 + [Options](#options)
+  + [Highlight on key press](#highlight-on-key-press)
   + [Customize colors](#customize-colors)
   + [Toggle highlighting](#toggle-highlighting)
 + [Moving Across a Line](#moving-across-a-line)
@@ -61,6 +62,17 @@ $ git clone https://github.com/unblevable/quick-scope ~/.vim/bundle/quick-scope 
 ```
 
 ## Options
+### Highlight on key press
+```vim
+" Your .vimrc
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Trigger a highlight only when pressing f and F.
+let g:qs_highlight_on_keys =  ['f', 'F']
+```
+
 ### Customize colors
 ```vim
 " Your .vimrc
